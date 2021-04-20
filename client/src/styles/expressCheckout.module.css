@@ -1,0 +1,17 @@
+.Express {
+  text-align: center;
+}
+
+.Express button.muhbtn {
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.Express button.muhbtn.shopPay {
+  background-color: blue;
+}
+
+.Express h5 {
+  font-size: 1rem;
+}
