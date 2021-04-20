@@ -6,13 +6,15 @@ body {
   margin: 0;
 }
 
+.App h1 {
+  font-size: 1.5rem;
+}
+
 .App {
-  background-color: lightgray;
   height: 100vh;
   padding: 1rem;
 }
-
-main {
+.main-wrapper {
   border: 1px solid red;
   display: flex;
   width: 70vw;
@@ -21,12 +23,12 @@ main {
   background-color: #fff;
 }
 
-.container {
+.section-container {
   border: 1px solid green;
   flex-grow: 1;
 }
 
-.container h1 {
+.section-container h1 {
   background-color: cornflowerblue;
   color: #fff;
   padding: 1rem;
@@ -34,7 +36,12 @@ main {
 }
 
 .right-side {
-  max-width: 400px;;
+  max-width: 400px;
+  background-color: #dedede;
+}
+
+.footer-container {
+  text-align: center;
 }
 
 

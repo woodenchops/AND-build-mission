@@ -4,12 +4,12 @@ import RightSide from './RightSide'
 
 function Main() {
   return (
-    <main>
-        <section className="left-side container">
+    <main className="main-wrapper">
+        <section className="left-side section-container">
           <h1>left side</h1>
           <LeftSide/>
         </section>
-        <section className="right-side container">
+        <section className="right-side section-container">
           <h1>right side</h1>
           <RightSide/>
         </section>
