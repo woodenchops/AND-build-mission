@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: lightgray;
+  height: 100vh;
+  padding: 1rem;
+}
 
 main {
   border: 1px solid red;
   display: flex;
-  max-width: 70%;
+  width: 70vw;
   margin: 0 auto;
+  max-width: 1920px;
+  background-color: #fff;
 }
 
 .container {
