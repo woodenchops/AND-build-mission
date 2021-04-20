@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+
+main {
+  border: 1px solid red;
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.container {
+  border: 1px solid green;
+  flex-grow: 1;
+}
+
+.container h1 {
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+.right-side {
+  max-width: 400px;;
+}
+
+
