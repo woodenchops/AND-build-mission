@@ -2,7 +2,6 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 function ContactInformation() {
-  const x = 'hghg';
   return (
     <div>
       <h4>ContactInformation</h4>
