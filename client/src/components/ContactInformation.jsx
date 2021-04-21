@@ -1,6 +1,24 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
+function passwords() {
+  return (
+    <>
+      <Form.Group controlId='formBasicPassword'>
+        <Form.Label>Password</Form.Label>
+        <Form.Control type='password' placeholder='Password' />
+        <Form.Text className='text-muted'></Form.Text>
+      </Form.Group>
+
+      <Form.Group controlId='formBasicPassword2'>
+        <Form.Label>Password</Form.Label>
+        <Form.Control type='password' placeholder='Re-enter Password' />
+        <Form.Text className='text-muted'></Form.Text>
+      </Form.Group>
+    </>
+  );
+}
+
 function ContactInformation() {
   return (
     <div>
@@ -24,6 +42,7 @@ function ContactInformation() {
             label='Sign up for loyalty scheme and create account'
           />
         </Form.Group>
+        {passwords()}
         <Button variant='primary' type='submit'>
           Submit
         </Button>
