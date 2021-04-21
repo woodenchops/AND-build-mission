@@ -2,16 +2,18 @@
   text-align: center;
 }
 
-.Express button.payment-btn {
-  border: none;
-  border-radius: 3px;
-  margin: 5px;
-}
+/* .Express button.payment-btn {
 
-.Express button.payment-btn.shopPay {
-  background-color: blue;
-}
+} */
+
 
 .Express h5 {
   font-size: 1rem;
+}
+
+
+.Payment button {
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
 }
