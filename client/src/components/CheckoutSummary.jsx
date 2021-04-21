@@ -1,7 +1,12 @@
 import React from 'react';
-import { Button, Row, Col, Form } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-function CheckoutSummary() {
+function CheckoutSummary(basket, setBasket) {
+  const total = basket.reduce(
+    (accumulator, current) => accumulator + current.price,
+    0
+  );
+
   return (
     <>
       <h4>CheckoutSummary</h4>
@@ -10,7 +15,7 @@ function CheckoutSummary() {
           <p>Subtotal</p>
         </Col>
         <Col>
-          <p>£4.00</p>
+          <p>£{total}</p>
         </Col>
       </Row>
       <Row>
@@ -27,7 +32,7 @@ function CheckoutSummary() {
           <h5>Total</h5>
         </Col>
         <Col>
-          <p>£4.00</p>
+          <p>£{total}</p>
         </Col>
       </Row>
     </>

@@ -1,22 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import CheckoutProduct from './CheckoutProduct';
 
-function ProductBasket() {
-  const [basket, setBasket] = useState([
-    {
-      name: 'chocolate',
-      quantity: 1,
-      price: 4,
-      picture: 'image',
-    },
-    {
-      name: 'card',
-      quantity: 1,
-      price: 4,
-      picture: 'image',
-    },
-  ]);
+function ProductBasket(basket, setBasket) {
   return (
     <div>
       <Container>
