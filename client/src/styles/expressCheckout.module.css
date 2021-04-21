@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-.Express button.muhbtn {
+.Express button.payment-btn {
   border: none;
   border-radius: 3px;
   margin: 5px;
 }
 
-.Express button.muhbtn.shopPay {
+.Express button.payment-btn.shopPay {
   background-color: blue;
 }
 

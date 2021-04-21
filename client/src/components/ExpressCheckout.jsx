@@ -7,9 +7,9 @@ function ExpressCheckout() {
     <div className={styles.Express}>
       <h5>ExpressCheckout</h5>
       <div className="payment-types-wrapper">
-        <button className="shopPay btn">shopPay</button>
-        <button className="googlePay muhbtn">googlePay</button>
-        <button className="payPal btn">payPal</button>
+        <button className="shopPay payment-btn">shopPay</button>
+        <button className="googlePay payment-btn">googlePay</button>
+        <button className="payPal payment-btn">payPal</button>
       </div>
     </div>
   )

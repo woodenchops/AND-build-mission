@@ -2,12 +2,14 @@ import React from 'react'
 import CheckoutSummary from './CheckoutSummary'
 import DiscountCode from './DiscountCode'
 import LoyaltySchemeAd from './LoyaltySchemeAd'
-import SaltedCaramel from './SaltedCaramel'
+import ProductBasket from './ProductBasket'
+
+
 
 function RightSide() {
   return (
     <div>
-      <SaltedCaramel/>
+      <ProductBasket/>
       <DiscountCode/>
       <CheckoutSummary/>
       <LoyaltySchemeAd/>
