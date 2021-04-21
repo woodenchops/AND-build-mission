@@ -32,7 +32,7 @@ function CheckoutSummary(props) {
           <h5>Total</h5>
         </Col>
         <Col>
-          <p>£</p>
+          <p>£{total}</p>
         </Col>
       </Row>
     </>
