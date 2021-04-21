@@ -4,8 +4,6 @@ import { Form, Button } from 'react-bootstrap';
 function ContactInformation() {
   return (
     <div>
-      <h4>ContactInformation</h4>
-
       <h>Contact Information - Already have an account? Log in</h>
       <Form>
         <Form.Group controlId='formBasicEmail'>

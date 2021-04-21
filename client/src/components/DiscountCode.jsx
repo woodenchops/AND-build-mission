@@ -4,19 +4,21 @@ import { Button, Row, Col, Form } from 'react-bootstrap';
 function DiscountCode() {
   return (
     <div>
-      <h4>DiscountCode</h4>
       <Row>
         <Col>
-            <Form.Group controlId="formBasicDiscount">
-                <Form.Control type="discount-code" placeholder="Gift Card or Discount Code" />
-            </Form.Group>
+          <Form.Group controlId='formBasicDiscount'>
+            <Form.Control
+              type='discount-code'
+              placeholder='Gift Card or Discount Code'
+            />
+          </Form.Group>
         </Col>
         <Col>
-            <Button>Apply</Button>
+          <Button>Apply</Button>
         </Col>
-    </Row>
+      </Row>
     </div>
-  )
+  );
 }
 
-export default DiscountCode
+export default DiscountCode;

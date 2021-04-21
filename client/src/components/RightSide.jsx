@@ -1,20 +1,20 @@
-import React from 'react'
-import CheckoutSummary from './CheckoutSummary'
-import DiscountCode from './DiscountCode'
-import LoyaltySchemeAd from './LoyaltySchemeAd'
-import ProductBasket from './ProductBasket'
-
-
+import React from 'react';
+import CheckoutSummary from './CheckoutSummary';
+import DiscountCode from './DiscountCode';
+import LoyaltySchemeAd from './LoyaltySchemeAd';
+import ProductBasket from './ProductBasket';
 
 function RightSide() {
   return (
-    <div>
-      <ProductBasket/>
-      <DiscountCode/>
-      <CheckoutSummary/>
-      <LoyaltySchemeAd/>
-    </div>
-  )
+    <section className='right-side section-container'>
+      <div>
+        <ProductBasket />
+        <DiscountCode />
+        <CheckoutSummary />
+        <LoyaltySchemeAd />
+      </div>
+    </section>
+  );
 }
 
-export default RightSide
+export default RightSide;
