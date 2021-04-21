@@ -23,9 +23,9 @@ function RightSide() {
   return (
     <section className='right-side section-container'>
       <div>
-        <ProductBasket basket={basket} setBasket={setBasket} />
+        <ProductBasket basket={basket} />
         <DiscountCode />
-        <CheckoutSummary basket={basket} setBasket={setBasket} />
+        <CheckoutSummary basket={basket} />
         <LoyaltySchemeAd />
       </div>
     </section>

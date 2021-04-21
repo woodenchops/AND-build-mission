@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-function CheckoutSummary(basket, setBasket) {
-  const total = basket.reduce(
+function CheckoutSummary(props) {
+  const total = props.basket.reduce(
     (accumulator, current) => accumulator + current.price,
     0
   );
@@ -32,7 +32,7 @@ function CheckoutSummary(basket, setBasket) {
           <h5>Total</h5>
         </Col>
         <Col>
-          <p>£{total}</p>
+          <p>£</p>
         </Col>
       </Row>
     </>
