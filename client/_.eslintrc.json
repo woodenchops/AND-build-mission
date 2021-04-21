@@ -21,7 +21,7 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off",
     "no-use-before-define": "off",
-    "prefer-single": true
+    "prefer-single": "on"
     // "browser": true
   }
 }
