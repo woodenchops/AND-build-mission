@@ -1,13 +1,13 @@
-import React from 'react'
-import Footer from './Footer'
+import React from 'react';
+import Footer from './Footer';
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
-    <div className="layout">
+    <div className='layout'>
       {children}
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
