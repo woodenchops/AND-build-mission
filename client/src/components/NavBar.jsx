@@ -8,11 +8,10 @@ function NavBar() {
       <h4>PAPER TIGER</h4>
       <img src={Logo} alt='' />
       <Breadcrumb>
-        <Breadcrumb.Item href='#'>Home</Breadcrumb.Item>
-        <Breadcrumb.Item href='https://getbootstrap.com/docs/4.0/components/breadcrumb/'>
-          Library
-        </Breadcrumb.Item>
-        <Breadcrumb.Item active>Data</Breadcrumb.Item>
+        <Breadcrumb.Item href='#'>Cart</Breadcrumb.Item>
+        <Breadcrumb.Item active>Information </Breadcrumb.Item>
+        <Breadcrumb.Item href='#'>Payment</Breadcrumb.Item>
+        <Breadcrumb.Item href='#'>Review</Breadcrumb.Item>
       </Breadcrumb>
     </div>
   );
