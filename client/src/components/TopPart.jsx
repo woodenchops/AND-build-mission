@@ -9,11 +9,13 @@ function TopPart() {
   return (
     <section className='top-part section-container'>
       <div>
-        <h1>THANK YOU!</h1>
-        <h5>
-          Your order has now been placed and you've successfully registered with
-          our new loyalty scheme.
-        </h5>
+        <center>
+          <h1>THANK YOU!</h1>
+          <h5>
+            Your order has now been placed and you've successfully registered
+            with our new loyalty scheme.
+          </h5>
+        </center>
         <hr />
         <OrderSummary basket={basket} />
         <p>
