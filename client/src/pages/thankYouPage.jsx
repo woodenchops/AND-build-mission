@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import TopPart from '../components/TopPart';
+import MiddlePart from '../components/MiddlePart';
 import { BasketContext } from '../context/basketContext';
 
 function ThankYouPage() {
@@ -8,6 +9,7 @@ function ThankYouPage() {
   return (
     <section className='thank-you section-container'>
       <TopPart />
+      <MiddlePart />
     </section>
   );
 }
