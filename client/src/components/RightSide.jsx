@@ -3,10 +3,10 @@ import CheckoutSummary from './CheckoutSummary';
 import DiscountCode from './DiscountCode';
 import LoyaltySchemeAd from './LoyaltySchemeAd';
 import ProductBasket from './ProductBasket';
-import { MainContext } from '../context/mainContext';
+import { BasketContext, BasketProvider } from '../context/basketContext';
 
 function RightSide() {
-  const { basket } = useContext(MainContext);
+  const { basket } = useContext(BasketContext);
 
   return (
     <section className='right-side section-container'>
