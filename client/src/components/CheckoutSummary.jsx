@@ -9,7 +9,6 @@ function CheckoutSummary({ basket }) {
 
   return (
     <>
-      <h4>CheckoutSummary</h4>
       <Row>
         <Col>
           <p>Subtotal</p>
