@@ -10,7 +10,11 @@ function OrderSummary({ basket }) {
 
   return (
     <>
-      <p>Order Summary</p>
+      <p>
+        <center>
+          <b>Order Summary</b>
+        </center>
+      </p>
       <Container>
         {basket &&
           basket.length > 0 &&
@@ -31,7 +35,9 @@ function OrderSummary({ basket }) {
           <h5>Total</h5>
         </Col>
         <Col>
-          <p>£{total}</p>
+          <p>
+            <b>£{total}</b>
+          </p>
         </Col>
       </Row>
     </>
