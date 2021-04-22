@@ -3,6 +3,7 @@ import TopPart from '../components/TopPart';
 import MiddlePart from '../components/MiddlePart';
 import { BasketContext } from '../context/basketContext';
 import BottomPart from '../components/BottomPart';
+import CheckoutSummary from '../components/CheckoutSummary';
 
 function ThankYouPage() {
   const { basket } = useContext(BasketContext);
