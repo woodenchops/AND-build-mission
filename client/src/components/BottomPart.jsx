@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Col, Image } from 'react-bootstrap';
 import RatingStars from '../assets/images/RatingStars.png';
 
@@ -25,7 +26,9 @@ function BottomPart() {
           </p>
         </Row>
         <p>
-          <a href='#'>Survey Monkey: Paper Tiger - Customer feedback form</a>
+          <Link to='#'>
+            Survey Monkey: Paper Tiger - Customer feedback form
+          </Link>
         </p>
       </Col>
     </section>

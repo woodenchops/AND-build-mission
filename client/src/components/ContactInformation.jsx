@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
+import LoginModal from '../components/Modal';
 
 const passwords = (
   <>
@@ -17,11 +19,22 @@ const passwords = (
 );
 
 function ContactInformation({ passwordVisible, setPasswordVisible }) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
-      <h>
-        Contact Information - Already have an account? <a href='#'>Log in</a>
-      </h>
+      <span>
+        Contact Information - Already have an account?
+        <Link onClick={handleShow} to='#'>
+          Log in
+        </Link>
+      </span>
+      <LoginModal
+        show={show}
+        handleClose={handleClose}
+        handleShow={handleShow}
+      />
       <Form>
         <Form.Group controlId='formBasicEmail'>
           <Form.Label>Email address</Form.Label>

@@ -1,3 +1,5 @@
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CheckoutPage from './pages/checkoutPage';
@@ -11,13 +13,19 @@ function App() {
   return (
     <MainProvider>
       <BasketProvider>
-        <div className='App'>
-          <Layout>
-            <CheckoutPage />
-            <ThankYouPage />
-            <LoyaltyDisplayPage />
-          </Layout>
-        </div>
+        <Router>
+          <Fragment>
+            <Switch>
+              <div className='App'>
+                <Layout>
+                  <Route exact path='/' component={CheckoutPage} />
+                  <Route exact path='/thank-you' component={ThankYouPage} />
+                  <Route exact path='/loyalty' component={LoyaltyDisplayPage} />
+                </Layout>
+              </div>
+            </Switch>
+          </Fragment>
+        </Router>
       </BasketProvider>
     </MainProvider>
   );
