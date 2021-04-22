@@ -56,9 +56,42 @@ function ContactInformation() {
             return passwords();
           }
         })()}
-        <Button variant='primary' type='submit'>
-          Submit
-        </Button>
+
+        <p>Delivery Options</p>
+        <Form.Group controlId='formBasicCheckbox' label='Delivery Options'>
+          <Form.Check type='radio' name='group1' label='Ship' />
+          <Form.Check type='radio' name='group1' label='Pick up' />
+        </Form.Group>
+
+        <p>Delivery locations</p>
+        <Form.Group controlId='formBasicCheckbox' label='Pickup Location'>
+          <Form.Check
+            type='radio'
+            name='group2'
+            label='5a/71 Edinburgh Street'
+          />
+          <Form.Check
+            type='radio'
+            name='group2'
+            label='22 NotEdinburgh Street'
+          />
+        </Form.Group>
+
+        {(() => {
+          if (passwordVisible.visible) {
+            return (
+              <Button variant='primary' type='submit'>
+                Continue to Payment and create account
+              </Button>
+            );
+          } else {
+            return (
+              <Button variant='primary' type='submit'>
+                Continue to payment
+              </Button>
+            );
+          }
+        })()}
       </Form>
     </div>
   );
