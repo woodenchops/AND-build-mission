@@ -5,8 +5,8 @@ import Logo from '../assets/images/tiger_head_sgrey.png';
 function NavBar() {
   return (
     <div>
-      <h4>PAPER TIGER</h4>
-      <img src={Logo} alt='' />
+      {/* <h4>PAPER TIGER</h4>
+      <img src={Logo} alt='' /> */}
       <Breadcrumb>
         <Breadcrumb.Item href='#'>Cart</Breadcrumb.Item>
         <Breadcrumb.Item active>Information </Breadcrumb.Item>
