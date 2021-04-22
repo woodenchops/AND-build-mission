@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import CheckoutSummary from '../components/CheckoutSummary';
+import TopPart from '../components/TopPart';
+import MiddlePart from '../components/MiddlePart';
 import { BasketContext } from '../context/basketContext';
 
 function ThankYouPage() {
@@ -7,9 +8,8 @@ function ThankYouPage() {
 
   return (
     <section className='thank-you section-container'>
-      <div>
-        <CheckoutSummary basket={basket} />
-      </div>
+      <TopPart />
+      <MiddlePart />
     </section>
   );
 }

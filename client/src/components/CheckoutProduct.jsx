@@ -1,16 +1,16 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 
-function CheckoutProduct({ product }) {
+function CheckoutProduct({ name, price, picture, quantity }) {
   return (
     <div>
       <Row>
         <Col>
-          <Image src={product.picture} alt='image not found' thumbnail />
+          {picture && <Image src={picture} alt='image not found' thumbnail />}
         </Col>
-        <Col>x{product.quantity}</Col>
-        <Col>{product.name}</Col>
-        <Col>£{product.price}</Col>
+        <Col>{quantity && `x ${quantity}`}</Col>
+        <Col>{name}</Col>
+        <Col>£{price}</Col>
       </Row>
     </div>
   );

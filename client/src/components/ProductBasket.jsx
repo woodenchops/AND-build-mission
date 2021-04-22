@@ -8,7 +8,14 @@ function ProductBasket({ basket }) {
       <Container>
         {basket &&
           basket.length > 0 &&
-          basket.map((product) => <CheckoutProduct product={product} />)}
+          basket.map((product) => (
+            <CheckoutProduct
+              picture={product.picture}
+              quantity={product.quantity}
+              name={product.name}
+              price={product.price}
+            />
+          ))}
       </Container>
     </div>
   );
