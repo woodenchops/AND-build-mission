@@ -1,17 +1,16 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import ProductBasket from './ProductBasket';
 
-function CheckoutProduct(props) {
+function CheckoutProduct({ product }) {
   return (
     <div>
       <Row>
         <Col>
-          <Image src={props.product.picture} alt='image not found' thumbnail />
+          <Image src={product.picture} alt='image not found' thumbnail />
         </Col>
-        <Col>x{props.product.quantity}</Col>
-        <Col>{props.product.name}</Col>
-        <Col>£{props.product.price}</Col>
+        <Col>x{product.quantity}</Col>
+        <Col>{product.name}</Col>
+        <Col>£{product.price}</Col>
       </Row>
     </div>
   );
