@@ -1,0 +1,25 @@
+# create feature branch before starting any work
+
+# commit changes regularly
+
+# keep an eye on Master/Main branch for any updates
+
+REBASING WITH MASTER/MAIN
+
+# stash or commit changes on your feature branch
+
+# switch to Master/Main
+
+# git pull
+
+# switch back to feature branch
+
+# 'git rebase master’
+
+# fix any merge conflicts
+
+# ‘git add .’ - make sure you have no conflicts and have saved the changes BEFORE running ‘git add .’
+
+# ‘git rebase —continue’
+
+# push your feature branch up to the repo and set up a Pull Request
