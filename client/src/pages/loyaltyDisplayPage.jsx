@@ -1,9 +1,10 @@
 import React from 'react';
+import Logo from '../components/Logo';
 
 function LoyaltyDisplayPage() {
   return (
     <div>
-      <h4>test</h4>
+      <Logo />
     </div>
   );
 }
