@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import OrderSummary from './OrderSummary';
 import { BasketContext } from '../context/basketContext';
 
@@ -16,7 +17,7 @@ function TopPart() {
         <hr />
         <OrderSummary basket={basket} />
         <p>
-          Please see your <a href='#'>Tracking Information</a>
+          Please see your <Link to='#'>Tracking Information</Link>
         </p>
       </div>
     </section>
