@@ -5,6 +5,7 @@ import ThankYouPage from './pages/thankYouPage';
 import Layout from './components/Layout';
 import { MainProvider } from './context/mainContext';
 import { BasketProvider } from './context/basketContext';
+import LoyaltyDisplayPage from './pages/loyaltyDisplayPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Layout>
             <CheckoutPage />
             <ThankYouPage />
+            <LoyaltyDisplayPage />
           </Layout>
         </div>
       </BasketProvider>
