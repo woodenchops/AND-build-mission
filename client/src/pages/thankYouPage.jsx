@@ -1,9 +1,8 @@
-import React from 'react';
 import React, { useContext } from 'react';
-import CheckoutSummary from './CheckoutSummary';
+import CheckoutSummary from '../components/CheckoutSummary';
 import { BasketContext } from '../context/basketContext';
 
-function thankYouPage() {
+function ThankYouPage() {
   const { basket } = useContext(BasketContext);
 
   return (
@@ -15,4 +14,4 @@ function thankYouPage() {
   );
 }
 
-export default thankYouPage;
+export default ThankYouPage;

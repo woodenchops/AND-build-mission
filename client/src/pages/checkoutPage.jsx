@@ -1,7 +1,17 @@
 import React from 'react';
+import LeftSide from '../components/LeftSide';
+import RightSide from '../components/RightSide';
+import { BasketProvider } from '../context/basketContext';
 
-function checkoutPage() {
-  return <div></div>;
+function CheckoutPage() {
+  return (
+    <main className='main-wrapper'>
+      <LeftSide />
+      <BasketProvider>
+        <RightSide />
+      </BasketProvider>
+    </main>
+  );
 }
 
-export default checkoutPage;
+export default CheckoutPage;

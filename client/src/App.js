@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from './components/Main';
+import CheckoutPage from './pages/checkoutPage';
+import ThankYouPage from './pages/thankYouPage';
 import Layout from './components/Layout';
 import { MainProvider } from './context/mainContext';
 
@@ -9,7 +10,8 @@ function App() {
     <MainProvider>
       <div className='App'>
         <Layout>
-          <Main />
+          <CheckoutPage />
+          <ThankYouPage />
         </Layout>
       </div>
     </MainProvider>

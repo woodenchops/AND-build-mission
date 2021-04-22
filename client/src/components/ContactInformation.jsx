@@ -19,7 +19,9 @@ const passwords = (
 function ContactInformation({ passwordVisible, setPasswordVisible }) {
   return (
     <div>
-      <h>Contact Information - Already have an account? Log in</h>
+      <h>
+        Contact Information - Already have an account? <a href='#'>Log in</a>
+      </h>
       <Form>
         <Form.Group controlId='formBasicEmail'>
           <Form.Label>Email address</Form.Label>
