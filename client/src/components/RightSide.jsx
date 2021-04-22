@@ -3,7 +3,7 @@ import CheckoutSummary from './CheckoutSummary';
 import DiscountCode from './DiscountCode';
 import LoyaltySchemeAd from './LoyaltySchemeAd';
 import ProductBasket from './ProductBasket';
-import { BasketContext, BasketProvider } from '../context/basketContext';
+import { BasketContext } from '../context/basketContext';
 
 function RightSide() {
   const { basket } = useContext(BasketContext);

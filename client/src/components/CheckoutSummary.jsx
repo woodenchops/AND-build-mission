@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-function CheckoutSummary(props) {
-  const total = props.basket.reduce(
+function CheckoutSummary({ basket }) {
+  const total = basket.reduce(
     (accumulator, current) => accumulator + current.price,
     0
   );
