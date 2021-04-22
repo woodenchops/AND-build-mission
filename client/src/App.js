@@ -4,16 +4,19 @@ import CheckoutPage from './pages/checkoutPage';
 import ThankYouPage from './pages/thankYouPage';
 import Layout from './components/Layout';
 import { MainProvider } from './context/mainContext';
+import { BasketProvider } from './context/basketContext';
 
 function App() {
   return (
     <MainProvider>
-      <div className='App'>
-        <Layout>
-          <CheckoutPage />
-          <ThankYouPage />
-        </Layout>
-      </div>
+      <BasketProvider>
+        <div className='App'>
+          <Layout>
+            <CheckoutPage />
+            <ThankYouPage />
+          </Layout>
+        </div>
+      </BasketProvider>
     </MainProvider>
   );
 }
