@@ -5,11 +5,15 @@ function CheckoutProduct({ name, price, picture, quantity }) {
   return (
     <div>
       <Row>
+        {picture && (
+          <Col>
+            <Image src={picture} alt='image not found' thumbnail />
+          </Col>
+        )}
+        {quantity && <Col>x{quantity}</Col>}
         <Col>
-          {picture && <Image src={picture} alt='image not found' thumbnail />}
+          <b>{name}</b>
         </Col>
-        <Col>{quantity && `x ${quantity}`}</Col>
-        <Col>{name}</Col>
         <Col>£{price}</Col>
       </Row>
     </div>
