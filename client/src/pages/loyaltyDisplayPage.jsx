@@ -1,13 +1,13 @@
 import React from 'react';
-import Logo from '../components/Logo';
 import LoyaltyDisplayPageLeftSide from '../components/LoyaltyDisplayPageLeftSide';
+import LoyaltyRightSide from '../components/LoyaltyRightSide';
 
 function LoyaltyDisplayPage() {
   return (
-    <div>
-      <Logo />
+    <main className='main-wrapper'>
       <LoyaltyDisplayPageLeftSide />
-    </div>
+      <LoyaltyRightSide />
+    </main>
   );
 }
 

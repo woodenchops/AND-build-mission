@@ -7,7 +7,7 @@ function MiddlePart() {
   return (
     <section>
       <div>
-        Today you've earned <strong>180 points!</strong>
+        Today you've earned <strong>80 points!</strong>
       </div>
       <div>You're 200 points away from</div>
       <Row>
