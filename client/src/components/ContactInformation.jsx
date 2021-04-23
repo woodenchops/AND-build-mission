@@ -42,13 +42,13 @@ function ContactInformation({ passwordVisible, setPasswordVisible }) {
           <Form.Text className='text-muted'></Form.Text>
         </Form.Group>
 
-        <Form.Group controlId='formBasicCheckbox'>
+        <Form.Group controlId='formBasicCheckboxExclusive'>
           <Form.Check
             type='checkbox'
             label='Keep me up to date on news and exclusive offers'
           />
         </Form.Group>
-        <Form.Group controlId='formBasicCheckbox'>
+        <Form.Group controlId='formBasicCheckboxSignUp'>
           <Form.Check
             type='checkbox'
             label='Sign up for loyalty scheme and create account'
