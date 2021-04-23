@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Loyalty from '../assets/images/Loyalty.png';
 
 function MiddlePart() {
@@ -10,12 +11,15 @@ function MiddlePart() {
       </div>
       <div>You're 200 points away from</div>
       <Row>
-        <Col>
+        <Col className='loyalty-card'>
           <Image src={Loyalty} alt='card' rounded fluid />
         </Col>
         <Col></Col>
       </Row>
-      <div>Click LINK to get more information on our loyalty programme.</div>
+      <div>
+        Click <Link to='/loyalty'>Here</Link> to get more information on our
+        loyalty programme.
+      </div>
     </section>
   );
 }
