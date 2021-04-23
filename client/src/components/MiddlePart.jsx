@@ -6,16 +6,19 @@ function MiddlePart() {
   return (
     <section>
       <div>
-        Today you've earned <strong>180 points!</strong>
+        Today you've earned <strong>80 points!</strong>
       </div>
-      <div>You're 200 points away from</div>
+      <div>You're 200 points away from your next reward</div>
       <Row>
         <Col>
           <Image src={Loyalty} alt='card' rounded fluid />
         </Col>
         <Col></Col>
       </Row>
-      <div>Click LINK to get more information on our loyalty programme.</div>
+      <div>
+        Click <a href='#'>here</a> to get more information on our loyalty
+        programme.
+      </div>
     </section>
   );
 }

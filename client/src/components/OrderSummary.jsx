@@ -15,13 +15,12 @@ function OrderSummary({ basket }) {
           <b>Order Summary</b>
         </center>
       </p>
-      <Container>
-        {basket &&
-          basket.length > 0 &&
-          basket.map((product) => (
-            <CheckoutProduct name={product.name} price={product.price} />
-          ))}
-      </Container>
+      {basket &&
+        basket.length > 0 &&
+        basket.map((product) => (
+          <CheckoutProduct name={product.name} price={product.price} />
+        ))}
+      <br />
       <Row>
         <Col>
           <p>Pickup</p>
