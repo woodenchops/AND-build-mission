@@ -13,13 +13,13 @@ body {
 .App {
   height: 100vh;
   padding: 1rem;
+  width: 70vw;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .main-wrapper {
   border: 1px solid red;
   display: flex;
-  width: 70vw;
-  margin: 0 auto;
-  max-width: 1920px;
   background-color: #fff;
 }
 
@@ -42,4 +42,8 @@ body {
 
 .footer-container {
   text-align: center;
+}
+
+.col.loyalty-card {
+  max-width: 400px;
 }
