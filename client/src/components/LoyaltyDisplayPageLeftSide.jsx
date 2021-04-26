@@ -7,7 +7,7 @@ function LoyaltyDisplayPageLeftSide() {
     <section>
       <Col>
         <Row>
-          <h5>You've earned 180 Points</h5>
+          <h5>You've earned 80 Points</h5>
         </Row>
         <Row>
           <Image src={LoyaltyProgress} width={400}></Image>
